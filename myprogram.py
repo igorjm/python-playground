@@ -1,9 +1,17 @@
 # Author: @igorjm
 #
-#comments
-#type()
-age = input("Enter your age: ")
+# running program
 
-new_age = int(age) + 50
+def age_foo(age):
+    new_age = age + 50
+    return new_age
 
-print("You will be " + str(new_age) + " years old in 50 years from now")
+age = int(input("Enter your age: "))
+
+if age < 150:
+    print(age_foo(age))
+else:
+    print("How is that possible?")
+
+#print(age_foo(age))
+#print("You will be " + age_foo(age) + " years old in 50 years from now")

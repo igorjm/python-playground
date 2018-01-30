@@ -17,7 +17,7 @@ t = ("Hello", 3, 4.5)
 
 t[-1]
 
-dit(tuple) # opens all methods inside the tuple class
+dir(tuple) # opens all methods inside the tuple class
 
 # Dictionaries #
 

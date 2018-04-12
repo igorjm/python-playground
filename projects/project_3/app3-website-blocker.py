@@ -1,14 +1,16 @@
 import time
 from datetime import datetime as dt
 
-hosts_temp=r"D:\Dropbox\pp\block_websites\Demo\hosts"
-hosts_path="/etc/hosts"
+hosts_temp="hosts"
+#Mac/Linux:  hosts_path="/etc/hosts"
+hosts_path=r"C:\Windows\System32\drivers\etc\hosts"
 redirect="127.0.0.1"
-website_list=["www.facebook.com","facebook.com","dub119.mail.live.com","www.dub119.mail.live.com"]
+website_list=["www.facebook.com","facebook.com"]
 
 while True:
-    if dt(dt.now().year,dt.now().month,dt.now().day,8) < dt.now() < dt(dt.now().year,dt.now().month,dt.now().day,16):
+    if dt(dt.now().year,dt.now().month,dt.now().day,8) < dt.now() < dt(dt.now().year,dt.now().month,dt.now().day,17):
         print("Working hours...")
+        #File handling methods
         with open(hosts_path,'r+') as file:
             content=file.read()
             for website in website_list:
@@ -26,3 +28,8 @@ while True:
             file.truncate()
         print("Fun hours...")
     time.sleep(5)
+
+# "program.py" - run python w/ terminal
+# "program.pyw" - run python in background,
+
+# Windows: task schedule

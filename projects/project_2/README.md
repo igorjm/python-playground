@@ -1,4 +1,4 @@
-# Project 1
+# Project 2
 
 This is a Webmap using Python and Folium.
 
